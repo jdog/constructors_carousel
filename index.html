@@ -25,6 +25,27 @@
 
 <!-- loads all required files  -->
 <script src="//jdog.github.io/api/page.modules.remoteAPI.js"></script>
-<script src="page.modules.localAPI.js"></script>
+<script src="page.docs.constructors.carousel.js"></script>
+
+<script>
+
+PAGE.addWait(
+	"Modules.localAPI"
+	, [ "Modules.remoteAPI" ]
+	, function(ref) {
+
+		var dog = ref.remoteAPI
+
+		dog.buildAllSections([
+			"Docs.loader_PAGE"
+			, "Docs.loader_add"
+			, "Docs.loader"
+		])
+
+		return dog
+
+	})
+
+</script>
 
 </html>
