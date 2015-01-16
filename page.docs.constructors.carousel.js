@@ -1,4 +1,4 @@
-PAGE.add("Docs.Extensions.events", {
+PAGE.add("Docs.Constructors.Carousel", {
 	"jDog" : "version 1.0"
 	, "Methods" : [
 		{
